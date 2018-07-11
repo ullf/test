@@ -7,7 +7,7 @@ public class App
     public static void main( String[] args )
     {
 
-        System.setProperty("hadoop.home.dir", "D:\\spark\\");
+        System.setProperty("hadoop.home.dir", "%SPARK_HOME%");
         Api api=new Api();
 
         SparkSession spark = SparkSession

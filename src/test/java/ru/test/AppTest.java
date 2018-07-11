@@ -11,7 +11,7 @@ public class AppTest {
 
     @BeforeClass
     public void startSparkBefore(){
-        System.setProperty("hadoop.home.dir", "D:\\spark");
+        System.setProperty("hadoop.home.dir", "%SPARK_HOME%");
         spark = SparkSession
                 .builder()
                 .appName("Java Spark SQL basic example")
